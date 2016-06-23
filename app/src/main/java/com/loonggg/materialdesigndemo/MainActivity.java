@@ -1,5 +1,6 @@
 package com.loonggg.materialdesigndemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -153,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            Toast.makeText(this, "home", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, ToolbarActivity.class));
         } else if (id == R.id.nav_favorite) {
             Toast.makeText(this, "收藏", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_followers) {

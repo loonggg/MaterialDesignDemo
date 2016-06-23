@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/Theme.ToolBar.More"
+        app:logo="@drawable/logo"
+        app:navigationIcon="@drawable/menu_icon"
+        app:subtitle="smart_android(子标题)"
+        app:subtitleTextAppearance="@style/ToolbarTextAppearanceSubTitle"
+        app:subtitleTextColor="@color/white"
+        app:title="非著名程序员(标题)"
+        app:titleTextAppearance="@style/ToolbarTextAppearanceTitle"
+        app:titleTextColor="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>
