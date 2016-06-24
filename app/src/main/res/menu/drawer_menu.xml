@@ -9,7 +9,7 @@
         <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/nav_icon_favorite"
-            android:title="收藏" />
+            android:title="CardView" />
         <item
             android:id="@+id/nav_followers"
             android:icon="@drawable/nav_icon_followers"

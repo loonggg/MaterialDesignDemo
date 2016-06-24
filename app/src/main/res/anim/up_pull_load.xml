@@ -1,0 +1,14 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/up_pull_load_one"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/up_pull_load_two"
+        android:duration="150"/>
+    <item
+        android:drawable="@drawable/up_pull_load_three"
+        android:duration="150"/>
+
+</animation-list>
