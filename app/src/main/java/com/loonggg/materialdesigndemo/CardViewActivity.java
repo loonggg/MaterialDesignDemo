@@ -5,6 +5,8 @@ import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 import com.loonggg.materialdesigndemo.adapter.PullMoreRecyclerAdapter;
 import com.loonggg.materialdesigndemo.bean.CardInfo;
@@ -18,11 +20,13 @@ public class CardViewActivity extends BaseActivity {
     private PullMoreRecyclerAdapter adapter;
     private LinearLayoutManager mLayoutManager;
     List<CardInfo> list = new ArrayList<CardInfo>();
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_view);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         rv = (RecyclerView) findViewById(R.id.rv);
         swipeRefreshWidget = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_widget);
         swipeRefreshWidget.setColorSchemeResources(R.color.colorAccent, R.color.add_bg_color, R
@@ -75,6 +79,13 @@ public class CardViewActivity extends BaseActivity {
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 lastVisibleItem = mLayoutManager.findLastVisibleItemPosition();
+            }
+        });
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

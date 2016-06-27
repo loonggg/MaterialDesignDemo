@@ -8,6 +8,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_centerHorizontal="true">
 
         <ProgressBar
@@ -16,12 +18,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:indeterminate="false"
-            android:indeterminateDrawable="@anim/up_pull_load"/>
+            android:indeterminateDrawable="@drawable/up_pull_load"/>
 
         <TextView
             android:id="@+id/tv_content"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
+            android:layout_gravity="center"
             android:gravity="center_vertical"
             android:paddingLeft="8dp"
             android:text="上拉更多"/>

@@ -4,21 +4,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="6dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="12dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
+    app:cardBackgroundColor="@color/white"
+    app:contentPadding="8dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/item_iv"
-            android:layout_width="100dp"
-            android:layout_height="75dp"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
             android:layout_gravity="center_vertical"
             android:layout_margin="6dp"
             android:background="@drawable/item_one"
@@ -27,21 +32,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item_title_tv"
                 android:layout_width="wrap_content"
+                android:textColor="#383838"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="非著名程序员"/>
 
             <TextView
                 android:id="@+id/item_content_tv"
+                android:textColor="#545454"
+                android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="10dp"
                 android:text="美女说：非著名程序员公众号是东半球最好的技术分享公众号"/>
         </LinearLayout>
 

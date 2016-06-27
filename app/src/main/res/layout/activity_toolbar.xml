@@ -10,7 +10,7 @@
         android:background="@color/colorPrimaryDark"
         android:theme="@style/Theme.ToolBar.More"
         app:logo="@drawable/logo"
-        app:navigationIcon="@drawable/menu_icon"
+        app:navigationIcon="@mipmap/back_ib"
         app:subtitle="smart_android(子标题)"
         app:subtitleTextAppearance="@style/ToolbarTextAppearanceSubTitle"
         app:subtitleTextColor="@color/white"

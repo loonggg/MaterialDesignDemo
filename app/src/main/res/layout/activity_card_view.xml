@@ -11,6 +11,7 @@
         android:background="@color/colorPrimaryDark"
         app:subtitleTextColor="@color/white"
         app:title="CardView"
+        app:navigationIcon="@mipmap/back_ib"
         app:titleTextColor="@color/white"
         >
 
