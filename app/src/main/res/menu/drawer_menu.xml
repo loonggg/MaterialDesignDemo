@@ -13,7 +13,7 @@
         <item
             android:id="@+id/nav_followers"
             android:icon="@drawable/nav_icon_followers"
-            android:title="群组" />
+            android:title="Palette" />
 
         <item
             android:id="@+id/nav_settings"

@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView
         } else if (id == R.id.nav_favorite) {
             startActivity(new Intent(this, CardViewActivity.class));
         } else if (id == R.id.nav_followers) {
-            Toast.makeText(this, "群组", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, PaletteActivity.class));
         } else if (id == R.id.nav_settings) {
             Toast.makeText(this, "设置", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_share) {
