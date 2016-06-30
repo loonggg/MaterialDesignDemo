@@ -25,7 +25,7 @@ public class PullMoreRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.V
     //正在加载中
     public static final int LOADING_MORE = 2;
     //默认为0
-    private int load_more_status = 0;
+    private int load_more_status = 1;
 
     public List<CardInfo> list;
     private OnItemClickListener mClickListener;

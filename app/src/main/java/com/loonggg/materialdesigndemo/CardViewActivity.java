@@ -51,7 +51,7 @@ public class CardViewActivity extends BaseActivity {
                         swipeRefreshWidget.setEnabled(true);
                         swipeRefreshWidget.setRefreshing(false);
                     }
-                }, 2000);
+                }, 3000);
             }
         });
 
@@ -61,17 +61,21 @@ public class CardViewActivity extends BaseActivity {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                if (newState == RecyclerView.SCROLL_STATE_IDLE && lastVisibleItem + 1 == adapter
-                        .getItemCount()) {
-                    adapter.setMoreStatus(PullMoreRecyclerAdapter.LOADING_MORE);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            getDatas();
-                            adapter.setMoreStatus(PullMoreRecyclerAdapter.PULLUP_LOAD_MORE);
-                            adapter.notifyDataSetChanged();
-                        }
-                    }, 2000);
+                if (!swipeRefreshWidget.isRefreshing()) {
+                    if (newState == RecyclerView.SCROLL_STATE_IDLE && lastVisibleItem + 1 ==
+                            adapter.getItemCount()) {
+                        swipeRefreshWidget.setEnabled(false);
+                        adapter.setMoreStatus(PullMoreRecyclerAdapter.LOADING_MORE);
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                getDatas();
+                                swipeRefreshWidget.setEnabled(true);
+                                adapter.setMoreStatus(PullMoreRecyclerAdapter.PULLUP_LOAD_MORE);
+                                adapter.notifyDataSetChanged();
+                            }
+                        }, 3000);
+                    }
                 }
             }
 
