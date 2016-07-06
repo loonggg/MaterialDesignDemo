@@ -11,7 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 
-import com.loonggg.materialdesigndemo.adapter.ViewPagerAdapter;
+import com.loonggg.materialdesigndemo.adapter.PaletteViewPagerAdapter;
 import com.loonggg.materialdesigndemo.fragment.PaletteFragment;
 
 public class PaletteActivity extends BaseActivity {
@@ -34,7 +34,7 @@ public class PaletteActivity extends BaseActivity {
         toolbar_tab = (TabLayout) findViewById(R.id.toolbar_tab);
         main_vp_container = (ViewPager) findViewById(R.id.main_vp_container);
 
-        ViewPagerAdapter vpAdapter = new ViewPagerAdapter(getSupportFragmentManager(), this);
+        PaletteViewPagerAdapter vpAdapter = new PaletteViewPagerAdapter(getSupportFragmentManager(), this);
         main_vp_container.setAdapter(vpAdapter);
         toolbar_tab.setupWithViewPager(main_vp_container);
         changeTopBgColor(0);

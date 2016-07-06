@@ -5,22 +5,22 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.loonggg.materialdesigndemo.fragment.PageFragment;
+import com.loonggg.materialdesigndemo.fragment.PaletteFragment;
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class PaletteViewPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 5;
-    private String tabTitles[] = new String[]{"", "分享", "收藏", "关注", "关注者"};
+    private String tabTitles[] = new String[]{"主页", "分享", "收藏", "关注", "微博"};
     private Context context;
 
-    public ViewPagerAdapter(FragmentManager fm, Context context) {
+    public PaletteViewPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return PageFragment.newInstance(position + 1);
+        return PaletteFragment.newInstance(position);
     }
 
     @Override

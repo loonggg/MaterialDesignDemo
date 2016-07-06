@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView
         } else if (id == R.id.nav_followers) {
             startActivity(new Intent(this, PaletteActivity.class));
         } else if (id == R.id.nav_settings) {
-            Toast.makeText(this, "设置", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, XiTuActivity.class));
         } else if (id == R.id.nav_share) {
             Toast.makeText(this, "分享", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_feedback) {
