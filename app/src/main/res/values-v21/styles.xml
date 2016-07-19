@@ -5,5 +5,6 @@
         <item name="windowNoTitle">true</item>
         <item name="android:navigationBarColor">#27B5EE</item>
         <item name="android:textColorPrimary">#ffff33</item>
+        <item name="android:colorControlNormal">#5e2a7f</item>
     </style>
 </resources>
