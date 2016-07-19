@@ -1,14 +1,16 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="AppTheme.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">#ffff00</item>
+
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -20,6 +22,7 @@
     <style name="ToolbarTextAppearanceTitle">
         <item name="android:textSize">16sp</item>
     </style>
+
     <style name="ToolbarTextAppearanceSubTitle">
         <item name="android:textSize">14sp</item>
     </style>
@@ -33,7 +36,7 @@
     </style>
 
     <style name="transparentText" parent="TextAppearance.AppCompat.Small">
-        <item name="android:textColor" >#00000000</item>
+        <item name="android:textColor">#00000000</item>
 
     </style>
 
@@ -41,6 +44,5 @@
         <item name="android:textColor">#ffffffff</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
-
     </style>
 </resources>

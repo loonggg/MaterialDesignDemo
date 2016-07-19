@@ -7,7 +7,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
         android:theme="@style/Theme.ToolBar.More"
         app:logo="@drawable/logo"
         app:navigationIcon="@mipmap/back_ib"
