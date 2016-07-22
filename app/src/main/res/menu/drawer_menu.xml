@@ -5,24 +5,31 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/nav_icon_home"
-            android:title="Toolbar" />
+            android:title="Toolbar"/>
         <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/nav_icon_favorite"
-            android:title="CardView" />
+            android:title="CardView"/>
         <item
             android:id="@+id/nav_followers"
             android:icon="@drawable/nav_icon_followers"
-            android:title="Palette" />
+            android:title="Palette"/>
 
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/nav_icon_settings"
-            android:title="仿稀土" />
+            android:title="仿稀土"/>
         <item
             android:id="@+id/nav_style"
             android:icon="@drawable/nav_icon_gift"
-            android:title="主题style" />
+            android:title="主题style"/>
+
+        <item
+            android:id="@+id/night"
+            android:icon="@drawable/abc_btn_radio_material"
+            android:title="模式切换"
+            />
+
     </group>
 
     <item android:title="分享和反馈">
@@ -30,11 +37,11 @@
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/nav_icon_my_shares"
-                android:title="分享" />
+                android:title="分享"/>
             <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/nav_icon_feedback"
-                android:title="意见反馈" />
+                android:title="意见反馈"/>
         </menu>
     </item>
 

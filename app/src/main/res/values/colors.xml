@@ -7,4 +7,8 @@
     <color name="add_selected_color">#51C332</color>
     <color name="white">#ffffff</color>
     <color name="text_color">#7f7f7f</color>
+    <color name="navigation_bar_color">#27B5EE</color>
+    <color name="color_control_normal">#5e2a7f</color>
+    <color name="text_color_primary">#ffff33</color>
+    <color name="navigationview_bg_color">#ffffff</color>
 </resources>

@@ -1,10 +1,12 @@
 package com.loonggg.materialdesigndemo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -26,11 +28,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView
         .OnNavigationItemSelectedListener {
     private RecyclerView rv;
     private RecyclerAdapter adapter;
+    private SharedPreferences sp;
+    private boolean isNight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sp = getSharedPreferences("loonggg", this.MODE_PRIVATE);
         //toolbar的设置，稍后讲这个控件
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -167,6 +172,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView
             Toast.makeText(this, "分享", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_feedback) {
             Toast.makeText(this, "意见反馈", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.night) {
+            isNight = sp.getBoolean("night", false);
+            if (isNight) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                sp.edit().putBoolean("night", false).commit();
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                sp.edit().putBoolean("night", true).commit();
+            }
+            recreate();
+            return true;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
