@@ -7,6 +7,7 @@ MaterialDesign系列控件讲解
 ![](http://7xsgef.com1.z0.glb.clouddn.com/26DB607A-FBAD-4ACE-9D2C-6C45D71514B7.png)
 #### 文章学习
 关于Navigation Drawer的使用，具体请看下面这篇文章：
+
 [Android Material Design系列之Navigation Drawer](http://godcoder.me/2016/06/19/Android%20Material%20Design系列之Navigation%20Drawer/)
 
 ### FloatingActionButton和Snackbar
@@ -15,6 +16,7 @@ MaterialDesign系列控件讲解
 ![](http://7xsgef.com1.z0.glb.clouddn.com/sss三十多岁的.gif)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之FloatingActionButton和Snackbar](http://godcoder.me/2016/06/23/Android%20Material%20Design系列之FloatingActionButton和Snackbar/)
 
 ### Toolbar
@@ -22,6 +24,7 @@ MaterialDesign系列控件讲解
 ![](http://7xsgef.com1.z0.glb.clouddn.com/Screenshot_2016-06-23-17-01-27-906_MaterialDesign.png)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之Toolbar](http://godcoder.me/2016/06/28/Android%20Material%20Design系列之Toolbar/)
 
 ### RecyclerView和CardView
@@ -29,6 +32,7 @@ MaterialDesign系列控件讲解
 ![](http://7xsgef.com1.z0.glb.clouddn.com/dsdfdsfdsfdfdse3455.gif)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之RecyclerView和CardView](http://godcoder.me/2016/07/01/Android%20Material%20Design系列之RecyclerView和CardView/)
 
 ### Palette
@@ -36,6 +40,7 @@ MaterialDesign系列控件讲解
 ![](https://raw.githubusercontent.com/loonggg/MaterialDesignDemo/master/image/tmpdir__16_6_28_18_41_09.gif)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之Palette](http://godcoder.me/2016/07/04/Android%20Material%20Design系列之Palette/)
 
 ### CoordinatorLayout，AppBarLayout，CollapsingToolbarLayout，Toolbar，TabLayout 
@@ -43,6 +48,7 @@ MaterialDesign系列控件讲解
 ![](https://raw.githubusercontent.com/loonggg/CoordinatorLayoutDemo/master/image/1.gif)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之CoordinatorLayout，CollapsingToolbarLayout等](http://godcoder.me/2016/07/09/Android%20Material%20Design系列之CoordinatorLayout，CollapsingToolbarLayout等/)
 
 ### 主题样式介绍
@@ -50,6 +56,7 @@ MaterialDesign系列控件讲解
 ![](https://raw.githubusercontent.com/loonggg/MaterialDesignDemo/master/image/style.png)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之主题样式介绍说明等](http://godcoder.me/2016/07/23/Android%20Material%20Design系列之主题样式介绍说明等/)
 
 ### 夜间模式
@@ -57,4 +64,5 @@ MaterialDesign系列控件讲解
 ![](https://raw.githubusercontent.com/loonggg/MaterialDesignDemo/master/image/night.gif)
 #### 文章学习
 控件具体详情使用，请看下面的文章：
+
 [Android Material Design系列之夜间模式](http://godcoder.me/2016/07/28/Android%20Material%20Design系列之夜间模式/)
